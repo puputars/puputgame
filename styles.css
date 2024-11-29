@@ -1,0 +1,79 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+  color: #88c070;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Game container */
+.game-container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  color: #d47ac3;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.score {
+  font-size: 1.2rem;
+  color: #88c070;
+  margin-bottom: 20px;
+}
+
+.game-board {
+  width: 400px;
+  height: 400px;
+  background-color: #222222;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  border: 2px solid #88c070;
+  position: relative;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+  background-color: #2a2a2a;
+}
+
+.snake {
+  background-color: #88c070;
+}
+
+.food {
+  background-color: #d47ac3;
+}
+
+.start-button {
+  margin-top: 20px;
+  background-color: #88c070;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #99d080;
+}
+
+@media (max-width: 600px) {
+  .game-board {
+    width: 300px;
+    height: 300px;
+  }
+}
